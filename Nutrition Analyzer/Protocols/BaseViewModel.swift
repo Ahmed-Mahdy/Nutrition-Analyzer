@@ -9,10 +9,9 @@ import Foundation
 import RxSwift
 
 protocol BaseViewModel {
-    var isLoading: PublishSubject<Bool> { get }
+    var isLoading: BehaviorSubject<Bool> { get }
     var isError: PublishSubject<Error> { get }
     var disposeBag: DisposeBag { get }
-    var baseRepository: Repository { get }
 }
 extension BaseViewModel {
     func configureDisposeBag() {

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "70E20A7B-34E7-487B-BBA2-0F7C267B2335"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AC50ECFD-2267-42CD-8463-18EC5DE06C6F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Nutrition Analyzer/Network/NutritionTarget.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "task"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "AC50ECFD-2267-42CD-8463-18EC5DE06C6F - 94e14f35952b6cd7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Nutrition_Analyzer.NutritionTarget.task.getter : Moya.Task"
+                  moduleName = "Nutrition Analyzer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmedmahdy/ArtDevelop/Nutrition-Analyzer/Nutrition%20Analyzer/Network/NutritionTarget.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "1323">
+               </Location>
+               <Location
+                  uuid = "AC50ECFD-2267-42CD-8463-18EC5DE06C6F - 94e14f35952b6cd7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Nutrition_Analyzer.NutritionTarget.task.getter : Moya.Task"
+                  moduleName = "Nutrition Analyzer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmedmahdy/ArtDevelop/Nutrition-Analyzer/Nutrition%20Analyzer/Network/NutritionTarget.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "1472">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "74371C42-F57D-4BB7-8315-E9B1F0BF3E60"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Nutrition Analyzer/Moduls/Nutrition/ViewModel/NutritionViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "analyzeIngredients()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "74371C42-F57D-4BB7-8315-E9B1F0BF3E60 - 633358507684189e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Nutrition_Analyzer.NutritionViewModel.analyzeIngredients() -&gt; ()"
+                  moduleName = "Nutrition Analyzer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmedmahdy/ArtDevelop/Nutrition-Analyzer/Nutrition%20Analyzer/Moduls/Nutrition/ViewModel/NutritionViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "698">
+               </Location>
+               <Location
+                  uuid = "74371C42-F57D-4BB7-8315-E9B1F0BF3E60 - 196e77488a2b28f6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Nutrition_Analyzer.NutritionAnalysisResponse) -&gt; () in Nutrition_Analyzer.NutritionViewModel.analyzeIngredients() -&gt; ()"
+                  moduleName = "Nutrition Analyzer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmedmahdy/ArtDevelop/Nutrition-Analyzer/Nutrition%20Analyzer/Moduls/Nutrition/ViewModel/NutritionViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "841">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "677351AD-4782-46EC-B484-A143D5562417"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Nutrition Analyzer/Moduls/NutritionDetails/NutritionDetailsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "ingredientDetailsLayout()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

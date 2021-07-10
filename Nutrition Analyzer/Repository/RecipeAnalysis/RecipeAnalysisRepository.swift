@@ -16,7 +16,7 @@ class RecipeAnalysisRepository: Repository {
     public init(cachingPolicy: CachingPolicy = .NetworkOnly) {
         self.cachingPolicy = cachingPolicy
     }
-    func checkCkeckout(receipeName: String, recipeIngredients: [String]) -> Observable<NutritionAnalysisResponse> {
+    func analyzeRecipe(receipeName: String, recipeIngredients: [String]) -> Observable<NutritionAnalysisResponse> {
         return getData(.analyze(receipeName: receipeName, recipeIngredients: recipeIngredients), decodingType: NutritionAnalysisResponse.self)
     }
 }
