@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.4.3)
+  - FittedSheets (2.4.1)
   - Moya (14.0.0):
     - Moya/Core (= 14.0.0)
   - Moya/Core (14.0.0):
@@ -15,6 +16,7 @@ PODS:
   - RxSwift (5.1.2)
 
 DEPENDENCIES:
+  - FittedSheets
   - Moya
   - Moya/RxSwift
   - RxCocoa
@@ -22,6 +24,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - FittedSheets
     - Moya
     - RxCocoa
     - RxRelay
@@ -29,11 +32,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  FittedSheets: 839b9d261e446cfa9ae8d7229d266f22b30f8be8
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 1e2e1f9570186967f617e49128ed26ccf1bafc8e
 
-PODFILE CHECKSUM: a0e67ee17b5fefcf0ea4334b5fe738c15fb58a73
+PODFILE CHECKSUM: 90f5f46021f1e0f072a3d9c2ef75049f836d99dd
 
 COCOAPODS: 1.10.1

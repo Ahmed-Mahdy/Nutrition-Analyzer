@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2zS-0k-sDx">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Nutrition View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="NutritionViewController" customModule="Nutrition_Analyzer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="goz-FT-z8Y">
+                                <rect key="frame" x="20" y="220" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="0mC-05-4Db">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="lMV-uI-iqB"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="N5z-wp-RhO">
+                                <rect key="frame" x="0.0" y="240" width="414" height="622"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xJ-WP-u99">
+                                <rect key="frame" x="269" y="220" width="125" height="33"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <state key="normal" title="Add ingredient">
+                                    <color key="titleColor" systemColor="systemOrangeColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="addIngredient:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FX1-Jp-oAR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LbU-Zw-qLH">
+                                <rect key="frame" x="20" y="792" width="374" height="50"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Odw-vp-SkH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                <state key="normal" title="Add Recipe ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="adddreciepe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YWG-gN-RBe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="waX-bq-1Ku">
+                                <rect key="frame" x="20" y="792" width="374" height="50"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="CDx-ca-enX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                <state key="normal" title="Analyze">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="analyzeReciepe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7yP-II-93G"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="N5z-wp-RhO" secondAttribute="bottom" id="0BO-jd-axC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8xJ-WP-u99" secondAttribute="trailing" constant="20" id="343-os-gMn"/>
+                            <constraint firstItem="N5z-wp-RhO" firstAttribute="top" secondItem="goz-FT-z8Y" secondAttribute="bottom" constant="20" id="C1o-Fr-O2s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LbU-Zw-qLH" secondAttribute="bottom" constant="20" id="FeX-Ia-gPV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0mC-05-4Db" secondAttribute="trailing" id="GOf-IT-U4e"/>
+                            <constraint firstItem="0mC-05-4Db" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HL8-6W-l0y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N5z-wp-RhO" secondAttribute="trailing" id="M6l-OY-2JU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="waX-bq-1Ku" secondAttribute="bottom" constant="20" id="U9Y-U0-Esw"/>
+                            <constraint firstItem="N5z-wp-RhO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YZB-aX-xfy"/>
+                            <constraint firstItem="waX-bq-1Ku" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="bbj-xX-slV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LbU-Zw-qLH" secondAttribute="trailing" constant="20" id="e4d-7y-Xgn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="waX-bq-1Ku" secondAttribute="trailing" constant="20" id="kuR-Y9-R1q"/>
+                            <constraint firstItem="8xJ-WP-u99" firstAttribute="top" secondItem="0mC-05-4Db" secondAttribute="bottom" constant="20" id="mpi-SY-o7Z"/>
+                            <constraint firstItem="0mC-05-4Db" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="q7C-Xo-1AI"/>
+                            <constraint firstItem="goz-FT-z8Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qbD-gA-hAa"/>
+                            <constraint firstItem="LbU-Zw-qLH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="s7c-Sh-TRN"/>
+                            <constraint firstItem="goz-FT-z8Y" firstAttribute="top" secondItem="0mC-05-4Db" secondAttribute="bottom" constant="20" id="yVW-ec-SFi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="umM-ju-msO"/>
+                    <connections>
+                        <outlet property="addIngredientButton" destination="8xJ-WP-u99" id="MJi-6H-G8e"/>
+                        <outlet property="addReciepeButton" destination="LbU-Zw-qLH" id="V0C-rW-w2v"/>
+                        <outlet property="analyzeButton" destination="waX-bq-1Ku" id="sQp-uD-aVZ"/>
+                        <outlet property="reciepeName" destination="goz-FT-z8Y" id="zyC-n1-Uhg"/>
+                        <outlet property="tableView" destination="N5z-wp-RhO" id="CPR-Jn-4X2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="90.401785714285708"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="a2E-8U-zwm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="2zS-0k-sDx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ETw-Jp-wtR">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="D43-RL-dfz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="elc-4x-i9B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="90.401785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="home" width="257.5" height="180"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

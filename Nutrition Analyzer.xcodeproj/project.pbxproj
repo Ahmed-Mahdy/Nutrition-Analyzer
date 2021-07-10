@@ -12,7 +12,7 @@
 		96A1FF53E8EEB6148FC03DFD /* Pods_Nutrition_Analyzer_Nutrition_AnalyzerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B0F3E3058AF6250EF31E31 /* Pods_Nutrition_Analyzer_Nutrition_AnalyzerUITests.framework */; };
 		C2B4E8B52698A3B100017BAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B4E8B42698A3B100017BAC /* AppDelegate.swift */; };
 		C2B4E8B72698A3B100017BAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B4E8B62698A3B100017BAC /* SceneDelegate.swift */; };
-		C2B4E8B92698A3B100017BAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B4E8B82698A3B100017BAC /* ViewController.swift */; };
+		C2B4E8B92698A3B100017BAC /* NutritionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B4E8B82698A3B100017BAC /* NutritionViewController.swift */; };
 		C2B4E8BC2698A3B100017BAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2B4E8BA2698A3B100017BAC /* Main.storyboard */; };
 		C2B4E8BE2698A3B300017BAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2B4E8BD2698A3B300017BAC /* Assets.xcassets */; };
 		C2B4E8C12698A3B300017BAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2B4E8BF2698A3B300017BAC /* LaunchScreen.storyboard */; };
@@ -30,6 +30,21 @@
 		C2B4E903269A086800017BAC /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B4E8FE269A086800017BAC /* IndicatorView.swift */; };
 		C2B4E904269A086800017BAC /* LoadingViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B4E8FF269A086800017BAC /* LoadingViewable.swift */; };
 		C2B4E906269A094600017BAC /* Reactive+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B4E905269A094600017BAC /* Reactive+Loading.swift */; };
+		C2B4E90C269A134100017BAC /* NutritionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B4E90B269A134100017BAC /* NutritionViewModel.swift */; };
+		C2B4E90E269A154300017BAC /* IngredientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B4E90D269A154200017BAC /* IngredientModel.swift */; };
+		C2B4E911269A1DC900017BAC /* IngredientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B4E910269A1DC900017BAC /* IngredientTableViewCell.swift */; };
+		C2B4E913269A1DE000017BAC /* IngredientTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2B4E912269A1DE000017BAC /* IngredientTableViewCell.xib */; };
+		C2B4E916269A37D500017BAC /* AddIngredientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B4E915269A37D500017BAC /* AddIngredientViewController.swift */; };
+		C2B4E918269A383200017BAC /* AddIngredientViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2B4E917269A383200017BAC /* AddIngredientViewController.xib */; };
+		C2B4E91B269A3ADB00017BAC /* AddReciepeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B4E91A269A3ADB00017BAC /* AddReciepeViewController.swift */; };
+		C2B4E91E269A3AEA00017BAC /* AddReciepeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2B4E91D269A3AEA00017BAC /* AddReciepeViewController.xib */; };
+		C2B4E921269A3BBD00017BAC /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B4E920269A3BBD00017BAC /* BaseCoordinator.swift */; };
+		C2B4E923269A3BEB00017BAC /* NutritionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B4E922269A3BEB00017BAC /* NutritionCoordinator.swift */; };
+		C2B4E925269A3E6900017BAC /* ViewController+loadNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B4E924269A3E6900017BAC /* ViewController+loadNib.swift */; };
+		C2B4E928269A5DED00017BAC /* NutritionDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B4E927269A5DED00017BAC /* NutritionDetailsViewController.swift */; };
+		C2B4E92A269A5DFF00017BAC /* NutritionDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2B4E929269A5DFF00017BAC /* NutritionDetailsViewController.xib */; };
+		C2B4E92D269A621B00017BAC /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B4E92C269A621B00017BAC /* DetailsView.swift */; };
+		C2B4E92F269A622A00017BAC /* DetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2B4E92E269A622A00017BAC /* DetailsView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +74,7 @@
 		C2B4E8B12698A3B100017BAC /* Nutrition Analyzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nutrition Analyzer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2B4E8B42698A3B100017BAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2B4E8B62698A3B100017BAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C2B4E8B82698A3B100017BAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C2B4E8B82698A3B100017BAC /* NutritionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionViewController.swift; sourceTree = "<group>"; };
 		C2B4E8BB2698A3B100017BAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C2B4E8BD2698A3B300017BAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2B4E8C02698A3B300017BAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -82,6 +97,21 @@
 		C2B4E8FE269A086800017BAC /* IndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
 		C2B4E8FF269A086800017BAC /* LoadingViewable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewable.swift; sourceTree = "<group>"; };
 		C2B4E905269A094600017BAC /* Reactive+Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reactive+Loading.swift"; sourceTree = "<group>"; };
+		C2B4E90B269A134100017BAC /* NutritionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionViewModel.swift; sourceTree = "<group>"; };
+		C2B4E90D269A154200017BAC /* IngredientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientModel.swift; sourceTree = "<group>"; };
+		C2B4E910269A1DC900017BAC /* IngredientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientTableViewCell.swift; sourceTree = "<group>"; };
+		C2B4E912269A1DE000017BAC /* IngredientTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IngredientTableViewCell.xib; sourceTree = "<group>"; };
+		C2B4E915269A37D500017BAC /* AddIngredientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIngredientViewController.swift; sourceTree = "<group>"; };
+		C2B4E917269A383200017BAC /* AddIngredientViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddIngredientViewController.xib; sourceTree = "<group>"; };
+		C2B4E91A269A3ADB00017BAC /* AddReciepeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReciepeViewController.swift; sourceTree = "<group>"; };
+		C2B4E91D269A3AEA00017BAC /* AddReciepeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddReciepeViewController.xib; sourceTree = "<group>"; };
+		C2B4E920269A3BBD00017BAC /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		C2B4E922269A3BEB00017BAC /* NutritionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionCoordinator.swift; sourceTree = "<group>"; };
+		C2B4E924269A3E6900017BAC /* ViewController+loadNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+loadNib.swift"; sourceTree = "<group>"; };
+		C2B4E927269A5DED00017BAC /* NutritionDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionDetailsViewController.swift; sourceTree = "<group>"; };
+		C2B4E929269A5DFF00017BAC /* NutritionDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NutritionDetailsViewController.xib; sourceTree = "<group>"; };
+		C2B4E92C269A621B00017BAC /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		C2B4E92E269A622A00017BAC /* DetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsView.xib; sourceTree = "<group>"; };
 		CD8C75225A73D3C573DBD11E /* Pods-Nutrition Analyzer-Nutrition AnalyzerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nutrition Analyzer-Nutrition AnalyzerUITests.debug.xcconfig"; path = "Target Support Files/Pods-Nutrition Analyzer-Nutrition AnalyzerUITests/Pods-Nutrition Analyzer-Nutrition AnalyzerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F0491CAE621E477342D0241A /* Pods_Nutrition_AnalyzerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nutrition_AnalyzerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1B0F3E3058AF6250EF31E31 /* Pods_Nutrition_Analyzer_Nutrition_AnalyzerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nutrition_Analyzer_Nutrition_AnalyzerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +183,8 @@
 		C2B4E8B32698A3B100017BAC /* Nutrition Analyzer */ = {
 			isa = PBXGroup;
 			children = (
+				C2B4E91F269A3B8F00017BAC /* Coordinator */,
+				C2B4E907269A0FAB00017BAC /* Moduls */,
 				C2B4E8FA269A084C00017BAC /* LoadingView */,
 				C2B4E8F5269A068900017BAC /* Extensions */,
 				C2B4E8F2269A04BF00017BAC /* Protocols */,
@@ -160,8 +192,6 @@
 				C2B4E8E42699F79B00017BAC /* Network */,
 				C2B4E8B42698A3B100017BAC /* AppDelegate.swift */,
 				C2B4E8B62698A3B100017BAC /* SceneDelegate.swift */,
-				C2B4E8B82698A3B100017BAC /* ViewController.swift */,
-				C2B4E8BA2698A3B100017BAC /* Main.storyboard */,
 				C2B4E8BD2698A3B300017BAC /* Assets.xcassets */,
 				C2B4E8BF2698A3B300017BAC /* LaunchScreen.storyboard */,
 				C2B4E8C22698A3B300017BAC /* Info.plist */,
@@ -207,6 +237,7 @@
 		C2B4E8EA2699FE7800017BAC /* RecipeAnalysis */ = {
 			isa = PBXGroup;
 			children = (
+				C2B4E90D269A154200017BAC /* IngredientModel.swift */,
 				C2B4E8ED269A023700017BAC /* Response */,
 				C2B4E8EB2699FEB500017BAC /* RecipeAnalysisRepository.swift */,
 			);
@@ -225,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				C2B4E8F3269A04D100017BAC /* BaseViewModel.swift */,
+				C2B4E920269A3BBD00017BAC /* BaseCoordinator.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -234,6 +266,7 @@
 			children = (
 				C2B4E8F6269A069D00017BAC /* Reactive+Error.swift */,
 				C2B4E905269A094600017BAC /* Reactive+Loading.swift */,
+				C2B4E924269A3E6900017BAC /* ViewController+loadNib.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -248,6 +281,98 @@
 				C2B4E8FF269A086800017BAC /* LoadingViewable.swift */,
 			);
 			path = LoadingView;
+			sourceTree = "<group>";
+		};
+		C2B4E907269A0FAB00017BAC /* Moduls */ = {
+			isa = PBXGroup;
+			children = (
+				C2B4E92B269A61F900017BAC /* DetailsView */,
+				C2B4E926269A5DB600017BAC /* NutritionDetails */,
+				C2B4E919269A3AC900017BAC /* AddReciepe */,
+				C2B4E914269A37B700017BAC /* AddIngredient */,
+				C2B4E908269A0FE600017BAC /* Nutrition */,
+			);
+			path = Moduls;
+			sourceTree = "<group>";
+		};
+		C2B4E908269A0FE600017BAC /* Nutrition */ = {
+			isa = PBXGroup;
+			children = (
+				C2B4E90A269A132B00017BAC /* ViewModel */,
+				C2B4E909269A132200017BAC /* View */,
+			);
+			path = Nutrition;
+			sourceTree = "<group>";
+		};
+		C2B4E909269A132200017BAC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C2B4E90F269A1D9D00017BAC /* Cells */,
+				C2B4E8B82698A3B100017BAC /* NutritionViewController.swift */,
+				C2B4E8BA2698A3B100017BAC /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C2B4E90A269A132B00017BAC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C2B4E90B269A134100017BAC /* NutritionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C2B4E90F269A1D9D00017BAC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C2B4E910269A1DC900017BAC /* IngredientTableViewCell.swift */,
+				C2B4E912269A1DE000017BAC /* IngredientTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C2B4E914269A37B700017BAC /* AddIngredient */ = {
+			isa = PBXGroup;
+			children = (
+				C2B4E915269A37D500017BAC /* AddIngredientViewController.swift */,
+				C2B4E917269A383200017BAC /* AddIngredientViewController.xib */,
+			);
+			path = AddIngredient;
+			sourceTree = "<group>";
+		};
+		C2B4E919269A3AC900017BAC /* AddReciepe */ = {
+			isa = PBXGroup;
+			children = (
+				C2B4E91A269A3ADB00017BAC /* AddReciepeViewController.swift */,
+				C2B4E91D269A3AEA00017BAC /* AddReciepeViewController.xib */,
+			);
+			path = AddReciepe;
+			sourceTree = "<group>";
+		};
+		C2B4E91F269A3B8F00017BAC /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				C2B4E922269A3BEB00017BAC /* NutritionCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		C2B4E926269A5DB600017BAC /* NutritionDetails */ = {
+			isa = PBXGroup;
+			children = (
+				C2B4E927269A5DED00017BAC /* NutritionDetailsViewController.swift */,
+				C2B4E929269A5DFF00017BAC /* NutritionDetailsViewController.xib */,
+			);
+			path = NutritionDetails;
+			sourceTree = "<group>";
+		};
+		C2B4E92B269A61F900017BAC /* DetailsView */ = {
+			isa = PBXGroup;
+			children = (
+				C2B4E92C269A621B00017BAC /* DetailsView.swift */,
+				C2B4E92E269A622A00017BAC /* DetailsView.xib */,
+			);
+			path = DetailsView;
 			sourceTree = "<group>";
 		};
 		D5AF16CA5EE7030846F822DA /* Frameworks */ = {
@@ -368,10 +493,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2B4E913269A1DE000017BAC /* IngredientTableViewCell.xib in Resources */,
 				C2B4E8C12698A3B300017BAC /* LaunchScreen.storyboard in Resources */,
+				C2B4E918269A383200017BAC /* AddIngredientViewController.xib in Resources */,
+				C2B4E91E269A3AEA00017BAC /* AddReciepeViewController.xib in Resources */,
+				C2B4E92A269A5DFF00017BAC /* NutritionDetailsViewController.xib in Resources */,
 				C2B4E901269A086800017BAC /* LoadingView.xib in Resources */,
 				C2B4E8BE2698A3B300017BAC /* Assets.xcassets in Resources */,
 				C2B4E8BC2698A3B100017BAC /* Main.storyboard in Resources */,
+				C2B4E92F269A622A00017BAC /* DetailsView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,16 +630,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2B4E8EF269A025100017BAC /* NutritionAnalysisResponse.swift in Sources */,
-				C2B4E8B92698A3B100017BAC /* ViewController.swift in Sources */,
+				C2B4E8B92698A3B100017BAC /* NutritionViewController.swift in Sources */,
+				C2B4E925269A3E6900017BAC /* ViewController+loadNib.swift in Sources */,
 				C2B4E8EC2699FEB500017BAC /* RecipeAnalysisRepository.swift in Sources */,
+				C2B4E90C269A134100017BAC /* NutritionViewModel.swift in Sources */,
+				C2B4E92D269A621B00017BAC /* DetailsView.swift in Sources */,
 				C2B4E902269A086800017BAC /* LoadingView.swift in Sources */,
+				C2B4E928269A5DED00017BAC /* NutritionDetailsViewController.swift in Sources */,
 				C2B4E8B52698A3B100017BAC /* AppDelegate.swift in Sources */,
 				C2B4E8E92699FCAC00017BAC /* Repository.swift in Sources */,
 				C2B4E904269A086800017BAC /* LoadingViewable.swift in Sources */,
 				C2B4E906269A094600017BAC /* Reactive+Loading.swift in Sources */,
 				C2B4E8F4269A04D100017BAC /* BaseViewModel.swift in Sources */,
+				C2B4E90E269A154300017BAC /* IngredientModel.swift in Sources */,
+				C2B4E91B269A3ADB00017BAC /* AddReciepeViewController.swift in Sources */,
 				C2B4E8B72698A3B100017BAC /* SceneDelegate.swift in Sources */,
 				C2B4E8E62699FAAB00017BAC /* NutritionTarget.swift in Sources */,
+				C2B4E911269A1DC900017BAC /* IngredientTableViewCell.swift in Sources */,
+				C2B4E921269A3BBD00017BAC /* BaseCoordinator.swift in Sources */,
+				C2B4E916269A37D500017BAC /* AddIngredientViewController.swift in Sources */,
+				C2B4E923269A3BEB00017BAC /* NutritionCoordinator.swift in Sources */,
 				C2B4E8F7269A069D00017BAC /* Reactive+Error.swift in Sources */,
 				C2B4E903269A086800017BAC /* IndicatorView.swift in Sources */,
 				C2B4E900269A086800017BAC /* AnimateLoadingView.swift in Sources */,

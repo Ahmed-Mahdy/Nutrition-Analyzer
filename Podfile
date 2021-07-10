@@ -8,7 +8,8 @@ target 'Nutrition Analyzer' do
  pod 'Moya'
  pod 'Moya/RxSwift'
  pod 'RxCocoa'
-
+ pod 'FittedSheets'
+ 
   target 'Nutrition AnalyzerTests' do
     inherit! :search_paths
     # Pods for testing
